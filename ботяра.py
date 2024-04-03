@@ -5,7 +5,7 @@ import sqlite3
 from telebot import types
 import datetime
 # Создание объекта бота и передача токена для доступа к Telegram API
-bot = telebot.TeleBot('6824044830:AAF5gzO0N-pc-j0dQ2OgNdvrUhZCPv97_bs')
+bot = telebot.TeleBot('твой токен')
 
 # Подключение к базе данных SQLite
 conn = sqlite3.connect('databasе1.db', check_same_thread=False)
@@ -59,7 +59,7 @@ def open(message):
     bot.send_message(message.chat.id, 'внесения разрешены')
 
 
-@bot.message_handler(commands=["botstop666"])
+@bot.message_handler(commands=["stop"])
 def stopping(message):
     global flag
     flag = 0
@@ -161,7 +161,7 @@ def les_command(message):
     c.close()
     conn.close()
 # Функция для обработки команды /upd
-@bot.message_handler(commands=['update_les666'])
+@bot.message_handler(commands=['update'])
 def upd_command(message):
 
     mess_time = datetime.datetime.now()
@@ -368,7 +368,7 @@ while flag:
         print('❌❌❌❌❌ Сработало исключение! ❌❌❌❌❌')
 
 
-@bot.message_handler(commands=["botstop666"])
+@bot.message_handler(commands=["stop"])
 def stopping(message):
     global flag
     flag = 0
