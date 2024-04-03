@@ -5,7 +5,7 @@ import sqlite3
 from telebot import types
 import datetime
 # Создание объекта бота и передача токена для доступа к Telegram API
-bot = telebot.TeleBot('твой токен')
+bot = telebot.TeleBot('6756523438:AAHdGoxPsqn5JajCLIM3dnwe1m15DmVhNSg')
 
 # Подключение к базе данных SQLite
 conn = sqlite3.connect('databasе1.db', check_same_thread=False)
