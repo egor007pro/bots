@@ -1,7 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 import telebot
-bot = telebot.TeleBot('6756523438:AAHdGoxPsqn5JajCLIM3dnwe1m15DmVhNSg')
+bot = telebot.TeleBot('secret')
 
 @bot.message_handler(commands=['start'])
 def hello(message):
